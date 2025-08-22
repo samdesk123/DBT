@@ -8,5 +8,5 @@ SELECT
   user_id,
   movie_id,
   tag,
-  timestamp as tag_timestamp
+  CURRENT_TIMESTAMP AS tag_timestamp
 FROM raw_tags
