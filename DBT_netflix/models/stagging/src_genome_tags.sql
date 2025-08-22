@@ -2,7 +2,7 @@ WITH raw_genome_tags AS (
     SELECT
         *
     FROM
-        netflix.genome_tags
+        {{ source('netflix', 'genome_tags') }}
 )
 
 SELECT 

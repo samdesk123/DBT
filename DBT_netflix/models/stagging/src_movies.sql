@@ -4,7 +4,7 @@ WITH raw_movies AS (
         title,
         genres
     FROM
-        netflix.movies
+        {{ source('netflix', 'movies') }}
 )
 
 SELECT 

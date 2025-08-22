@@ -2,7 +2,7 @@ WITH raw_links AS (
     SELECT
         *
     FROM
-        netflix.links
+        {{ source('netflix', 'links') }}
 )
 
 SELECT 
